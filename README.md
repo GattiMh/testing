@@ -7,7 +7,8 @@ Make sure to install based on your operative system. The notebook was originally
 If you want to use Chemplot funcionalities, make sure to install it as well [https://github.com/mcsorkun/ChemPlot].
 
 
-All the above packages can be easily installed via conda or mamba. Is it advisable to create a new enviroment as well. Creating an enviroment from teachopencadd is enough.
+All the above packages can be easily installed via conda or mamba. Is it advisable to create a new enviroment as well.
+My advice is to create a new env from teachopencadd, as explained in their documentation [https://projects.volkamerlab.org/teachopencadd/installing.html]. Then, after activating the enviroment, install chemplot.
 
 
 Notebook will extract data from ChEMBL using TeachOpenCadd template notebook, then apply physchem filters. Finally Random Forest Regressor and SVM will be used on the retrieved set.
