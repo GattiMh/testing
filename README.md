@@ -11,3 +11,6 @@ All the above packages can be easily installed via conda or mamba. Is it advisab
 
 
 Notebook will extract data from ChEMBL using TeachOpenCadd template notebook, then apply physchem filters. Finally Random Forest Regressor and SVM will be used on the retrieved set.
+Metrics will be displayed for both models. 
+
+Feel free to change the target (currently set for ABL-1) by providing a different uniprot_ID
