@@ -1,15 +1,28 @@
 # Coding example for interview
 
 To run the notebook you will need different packages. 
-Thankfully most of them are avaliable from the [https://github.com/volkamerlab/teachopencadd] repository.
-Make sure to install based on your operative system. The notebook was originally tested on M1 Macs.
+Most of them can be installed using ```conda``` or ```mamba```
 
-If you want to use Chemplot funcionalities, make sure to install it as well [https://github.com/mcsorkun/ChemPlot].
+Packages required are:
 
+```
+mamba install rdkit
+mamba install chembl_webresource_client
+mamba install scikit-learn
+mamba install tqdm
+mamba install chemplot
+```
+If you are on M1 Macs (like this notebook was tested) you might want to include
 
-All the above packages can be easily installed via conda or mamba. Is it advisable to create a new enviroment as well.
-My advice is to create a new env from teachopencadd, as explained in their documentation [https://projects.volkamerlab.org/teachopencadd/installing.html]. Then, after activating the enviroment, install chemplot.
+```
+pip install bokeh==2.4.3
+```
+This should help in case you want to use the interactive visualiser plot with Chemplot.
+All the Chemplot code is not required to run the full pipeline, just for visualisation.
 
+Chembl extraction pipeline was taken from the [https://github.com/volkamerlab/teachopencadd] repository.
+
+You can read about chemplot here [https://github.com/mcsorkun/ChemPlot].
 
 Notebook will extract data from ChEMBL using TeachOpenCadd template notebook, then apply physchem filters. Finally Random Forest Regressor and SVM will be used on the retrieved set.
 Metrics will be displayed for both models. 
